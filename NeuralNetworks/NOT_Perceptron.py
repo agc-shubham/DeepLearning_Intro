@@ -1,17 +1,18 @@
 import pandas as pd
 
-# Set the weights (weight1, weight2) and bias (bias) to values that will correctly determine the AND operation.
-# More than one set of values will work!
+# The NOT operation only cares about one input. The operation 
+# returns a 0 if the input is 1 and a 1 if it's a 0. The other 
+# inputs to the perceptron are ignored.
 # TODO: Set weight1, weight2, and bias
-weight1 = 1.0
-weight2 = 1.0
-bias = -2.0
+weight1 = 0.0
+weight2 = -1.0
+bias = 0.0
 
 
 # DON'T CHANGE ANYTHING BELOW
 # Inputs and outputs
 test_inputs = [(0, 0), (0, 1), (1, 0), (1, 1)]
-correct_outputs = [False, False, False, True]
+correct_outputs = [True, False, True, False]
 outputs = []
 
 # Generate and check output
